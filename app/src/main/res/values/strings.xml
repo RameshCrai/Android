@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NMC</string>
+    <string name="welcome_nmc">Welcome NMC</string>
+    <string name="first_name">First Name: Ramesh</string>
+    <string name="last_name">Last Name: Rai</string>
+    <string name="stream">Stream: BCA</string>
+    <string name="phone">Phone: 982323992</string>
+    <string name="bio">Bio: IT Engineer</string>
+</resources>
