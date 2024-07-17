@@ -13,50 +13,14 @@
             android:theme="@style/Theme.NMC"
             tools:targetApi="31">
         <activity
-                android:name=".CalculateSum"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+                android:name=".ParseActivityTwo"
+                android:exported="false"/>
         <activity
-                android:name=".TableLayout"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+                android:name=".ParseActivityOne"
+                android:exported="false"/>
         <activity
-                android:name=".RelativeLayout"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".AbsoluteLayout"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <activity
-                android:name=".LeanearLayout"
-                android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
+                android:name=".ConstraintLayout"
+                android:exported="false"/>
         <activity
                 android:name=".MainActivity"
                 android:exported="true">
@@ -65,6 +29,26 @@
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+                android:name=".CalculateSum"
+                android:exported="true">
+        </activity>
+        <activity
+                android:name=".TableLayout"
+                android:exported="true">
+        </activity>
+        <activity
+                android:name=".RelativeLayout"
+                android:exported="true">
+        </activity>
+        <activity
+                android:name=".AbsoluteLayout"
+                android:exported="true">
+        </activity>
+        <activity
+                android:name=".LeanerLayout"
+                android:exported="true">
         </activity>
     </application>
 
