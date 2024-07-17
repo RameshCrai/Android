@@ -3,11 +3,11 @@ package com.nmc;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LeanearLayout extends AppCompatActivity {
+public class ConstraintLayout extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leanear_layout);
+        setContentView(R.layout.activity_constraint_layout);
     }
 }
