@@ -83,4 +83,17 @@
             app:layout_constraintWidth_percent="0.8"
             android:layout_marginTop="20dp"/>
 
+    <Button
+        android:id="@+id/buttonFragement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Fragement"
+        app:layout_constraintBaseline_toBottomOf="@id/buttonParsingValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="20dp"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,8 @@ import android.os.Bundle;
 
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonAbsolute, buttonSum, buttonLinear, buttonRelative, buttonTable, buttonParse, buttonConstraint;
+    private Button buttonAbsolute, buttonSum, buttonLinear,
+            buttonRelative, buttonTable, buttonParse, buttonConstraint,buttonFrage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         buttonTable = findViewById(R.id.buttonTable);
         buttonParse = findViewById(R.id.buttonParsingValue);
         buttonConstraint = findViewById(R.id.buttonConstraint);
+        buttonFrage = findViewById(R.id.buttonFragement);
 
 
         buttonLinear.setOnClickListener(view -> {
@@ -58,13 +60,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-
-
-
-
         buttonParse.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, ParseActivityOne.class);
+            startActivity(intent);
+        });
+        buttonFrage.setOnClickListener(view->{
+            Intent intent = new Intent(MainActivity.this, FragementDemoActivity.class);
             startActivity(intent);
         });
     }
