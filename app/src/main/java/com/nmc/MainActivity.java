@@ -9,7 +9,8 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonAbsolute, buttonSum, buttonLinear,
-            buttonRelative, buttonTable, buttonParse, buttonConstraint,buttonFrage;
+            buttonRelative, buttonTable, buttonParse,
+            buttonConstraint,buttonFrage, btnOptMenu, btnContMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         buttonParse = findViewById(R.id.buttonParsingValue);
         buttonConstraint = findViewById(R.id.buttonConstraint);
         buttonFrage = findViewById(R.id.buttonFragement);
+        btnOptMenu = findViewById(R.id.buttonOptionMenu);
+        btnContMenu = findViewById(R.id.buttonContextMenu);
 
 
         buttonLinear.setOnClickListener(view -> {
@@ -66,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
         });
         buttonFrage.setOnClickListener(view->{
             Intent intent = new Intent(MainActivity.this, FragementDemoActivity.class);
+            startActivity(intent);
+        });
+        btnOptMenu.setOnClickListener(view->{
+            Intent intent = new Intent(MainActivity.this, OptionMenu.class);
+            startActivity(intent);
+        });
+        btnContMenu.setOnClickListener(view->{
+            Intent intent = new Intent(MainActivity.this, ContextMenuExample.class);
             startActivity(intent);
         });
     }
