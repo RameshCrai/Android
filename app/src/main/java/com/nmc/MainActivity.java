@@ -10,7 +10,9 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     private Button buttonAbsolute, buttonSum, buttonLinear,
             buttonRelative, buttonTable, buttonParse,
-            buttonConstraint,buttonFrage, btnOptMenu, btnContMenu;
+            buttonConstraint,buttonFrage, btnOptMenu, btnContMenu,
+    buttonPopup, buttonDialog, buttonLview, buttonGview, buttonCview, buttonRview;
+    ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,12 @@ public class MainActivity extends AppCompatActivity {
         buttonFrage = findViewById(R.id.buttonFragement);
         btnOptMenu = findViewById(R.id.buttonOptionMenu);
         btnContMenu = findViewById(R.id.buttonContextMenu);
+        buttonPopup = findViewById(R.id.buttonPopupMenu);
+        buttonDialog = findViewById(R.id.buttonDialogBox);
+        buttonLview = findViewById(R.id.buttonListView);
+        buttonGview = findViewById(R.id.buttonGrideView);
+        buttonCview = findViewById(R.id.buttonCustome);
+        buttonRview = findViewById(R.id.buttonRecyclerView);
 
 
         buttonLinear.setOnClickListener(view -> {
@@ -79,5 +87,34 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ContextMenuExample.class);
             startActivity(intent);
         });
+
+        buttonPopup.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, PopupMenuExample.class);
+            startActivity(intent);
+        });
+
+        buttonDialog.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, dialogueExample.class);
+            startActivity(intent);
+        });
+
+
+        buttonLview.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, listViewExample.class);
+            startActivity(intent);
+        });
+
+//        buttonGview.setOnClickListener(view -> {
+//            Intent intent = new Intent(MainActivity.this, );
+//            startActivity(intent);
+//        });
+
+        buttonCview.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, CustomListViewExample.class);
+            startActivity(intent);
+        });
+
+
+
     }
 }

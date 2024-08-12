@@ -109,7 +109,7 @@
             android:id="@+id/buttonContextMenu"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Option"
+            android:text="Context Menu"
             app:layout_constraintTop_toBottomOf="@id/buttonOptionMenu"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -117,6 +117,73 @@
             android:layout_marginTop="20dp"
     />
 
+    <Button
+            android:id="@+id/buttonPopupMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="PopUp Menu"
+            app:layout_constraintTop_toBottomOf="@id/buttonContextMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
 
+    <Button
+            android:id="@+id/buttonDialogBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Dialogue Box"
+            app:layout_constraintTop_toBottomOf="@id/buttonPopupMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
 
+    <Button
+            android:id="@+id/buttonListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="List View"
+            app:layout_constraintTop_toBottomOf="@id/buttonDialogBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
+    <Button
+            android:id="@+id/buttonGrideView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gride View"
+            app:layout_constraintTop_toBottomOf="@id/buttonListView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
+
+    <Button
+            android:id="@+id/buttonCustome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Custom View"
+            app:layout_constraintTop_toBottomOf="@id/buttonGrideView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
+    <Button
+            android:id="@+id/buttonRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Recycler View"
+            app:layout_constraintTop_toBottomOf="@id/buttonCustome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_marginTop="20dp"
+    />
 </androidx.constraintlayout.widget.ConstraintLayout>

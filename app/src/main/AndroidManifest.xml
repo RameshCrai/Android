@@ -13,6 +13,21 @@
             android:theme="@style/Theme.NMC"
             tools:targetApi="31">
         <activity
+                android:name=".CustomListViewExample"
+                android:exported="false"/>
+        <activity
+                android:name=".GrideViewExample"
+                android:exported="false"/>
+        <activity
+                android:name=".listViewExample"
+                android:exported="false"/>
+        <activity
+                android:name=".dialogueExample"
+                android:exported="false"/>
+        <activity
+                android:name=".PopupMenuExample"
+                android:exported="false"/>
+        <activity
                 android:name=".ContextMenu"
                 android:exported="false"/>
         <activity
