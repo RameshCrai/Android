@@ -1,189 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-            android:id="@+id/buttonLinear"
-            android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Linear"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context=".MainActivity">
 
-    <Button
-            android:id="@+id/buttonTable"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Table"
-            app:layout_constraintTop_toBottomOf="@+id/buttonLinear"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonLinear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Linear"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonConstraint"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Constraint"
-            app:layout_constraintTop_toBottomOf="@+id/buttonTable"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonTable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Table"
+                app:layout_constraintTop_toBottomOf="@+id/buttonLinear"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonRelative"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Relative"
-            app:layout_constraintTop_toBottomOf="@+id/buttonConstraint"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonConstraint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Constraint"
+                app:layout_constraintTop_toBottomOf="@+id/buttonTable"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonAbsolute"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Absolute"
-            app:layout_constraintTop_toBottomOf="@+id/buttonRelative"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonRelative"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Relative"
+                app:layout_constraintTop_toBottomOf="@+id/buttonConstraint"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonSum"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Sum"
-            app:layout_constraintTop_toBottomOf="@+id/buttonAbsolute"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonAbsolute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Absolute"
+                app:layout_constraintTop_toBottomOf="@+id/buttonRelative"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonParsingValue"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="ParsingValue"
-            app:layout_constraintTop_toBottomOf="@+id/buttonSum"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"/>
+        <Button
+                android:id="@+id/buttonSum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Sum"
+                app:layout_constraintTop_toBottomOf="@+id/buttonAbsolute"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-        android:id="@+id/buttonFragement"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Fragement"
-        app:layout_constraintTop_toBottomOf="@id/buttonParsingValue"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintWidth_percent="0.8"
-        android:layout_marginTop="20dp"
-        />
-    <Button
-            android:id="@+id/buttonOptionMenu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Option Menu"
-            app:layout_constraintTop_toBottomOf="@id/buttonFragement"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
-    <Button
-            android:id="@+id/buttonContextMenu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Context Menu"
-            app:layout_constraintTop_toBottomOf="@id/buttonOptionMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
+        <Button
+                android:id="@+id/buttonParsingValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ParsingValue"
+                app:layout_constraintTop_toBottomOf="@+id/buttonSum"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonPopupMenu"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="PopUp Menu"
-            app:layout_constraintTop_toBottomOf="@id/buttonContextMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
+        <Button
+                android:id="@+id/buttonFragement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fragement"
+                app:layout_constraintTop_toBottomOf="@id/buttonParsingValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonDialogBox"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Dialogue Box"
-            app:layout_constraintTop_toBottomOf="@id/buttonPopupMenu"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
+        <Button
+                android:id="@+id/buttonOptionMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Option Menu"
+                app:layout_constraintTop_toBottomOf="@id/buttonFragement"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonListView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="List View"
-            app:layout_constraintTop_toBottomOf="@id/buttonDialogBox"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
-    <Button
-            android:id="@+id/buttonGrideView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Gride View"
-            app:layout_constraintTop_toBottomOf="@id/buttonListView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
+        <Button
+                android:id="@+id/buttonContextMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Context Menu"
+                app:layout_constraintTop_toBottomOf="@id/buttonOptionMenu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
 
-    <Button
-            android:id="@+id/buttonCustome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Custom View"
-            app:layout_constraintTop_toBottomOf="@id/buttonGrideView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
-    <Button
-            android:id="@+id/buttonRecyclerView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Recycler View"
-            app:layout_constraintTop_toBottomOf="@id/buttonCustome"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintWidth_percent="0.8"
-            android:layout_marginTop="20dp"
-    />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+                android:id="@+id/buttonPopupMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PopUp Menu"
+                app:layout_constraintTop_toBottomOf="@id/buttonContextMenu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+        <Button
+                android:id="@+id/buttonDialogBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Dialogue Box"
+                app:layout_constraintTop_toBottomOf="@id/buttonPopupMenu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+        <Button
+                android:id="@+id/buttonListView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="List View"
+                app:layout_constraintTop_toBottomOf="@id/buttonDialogBox"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+        <Button
+                android:id="@+id/buttonGrideView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gride View"
+                app:layout_constraintTop_toBottomOf="@id/buttonListView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+        <Button
+                android:id="@+id/buttonCustome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Custom View"
+                app:layout_constraintTop_toBottomOf="@id/buttonGrideView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+        <Button
+                android:id="@+id/buttonRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Recycler View"
+                app:layout_constraintTop_toBottomOf="@id/buttonCustome"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintWidth_percent="0.8"
+                android:layout_marginTop="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

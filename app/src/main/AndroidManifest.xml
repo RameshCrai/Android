@@ -16,9 +16,6 @@
                 android:name=".CustomListViewExample"
                 android:exported="false"/>
         <activity
-                android:name=".GrideViewExample"
-                android:exported="false"/>
-        <activity
                 android:name=".listViewExample"
                 android:exported="false"/>
         <activity
@@ -28,15 +25,7 @@
                 android:name=".PopupMenuExample"
                 android:exported="false"/>
         <activity
-                android:name=".ContextMenu"
-                android:exported="false"/>
-        <activity
                 android:name=".OptionMenu"
-                android:exported="false"
-                android:label="@string/title_activity_option_menu"
-                android:theme="@style/Theme.NMC"/>
-        <activity
-                android:name=".Activity_Option_Menu"
                 android:exported="false"
                 android:label="@string/title_activity_option_menu"
                 android:theme="@style/Theme.NMC"/>
