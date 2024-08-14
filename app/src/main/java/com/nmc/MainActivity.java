@@ -104,13 +104,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-//        buttonGview.setOnClickListener(view -> {
-//            Intent intent = new Intent(MainActivity.this, );
-//            startActivity(intent);
-//        });
 
         buttonCview.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, CustomListViewExample.class);
+            startActivity(intent);
+        });
+
+        buttonRview.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, RecyclerViewExample.class);
             startActivity(intent);
         });
 
