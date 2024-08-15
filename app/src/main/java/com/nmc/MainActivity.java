@@ -11,7 +11,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonAbsolute, buttonSum, buttonLinear,
             buttonRelative, buttonTable, buttonParse,
             buttonConstraint,buttonFrage, btnOptMenu, btnContMenu,
-    buttonPopup, buttonDialog, buttonLview, buttonGview, buttonCview, buttonRview;
+    buttonPopup, buttonDialog, buttonLview, buttonGview, buttonCview,
+            buttonRview, btndatabase;
     ;
 
     @Override
@@ -110,11 +111,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
         buttonRview.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, RecyclerViewExample.class);
             startActivity(intent);
         });
 
+        btndatabase.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, DatabaseActivity.class);
+            startActivity(intent);
+        });
 
 
     }
