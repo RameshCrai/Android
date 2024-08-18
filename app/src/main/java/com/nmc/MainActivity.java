@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
             buttonRelative, buttonTable, buttonParse,
             buttonConstraint,buttonFrage, btnOptMenu, btnContMenu,
     buttonPopup, buttonDialog, buttonLview, buttonCview,
-            buttonRview, btndatabase, googleBtn;
+            buttonRview, btndatabase, googleBtn, apicallBtn;
     ;
 
     @Override
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         buttonRview = findViewById(R.id.buttonRecyclerView);
         btndatabase = findViewById(R.id.buttonDatabase);
         googleBtn = findViewById(R.id.googlemap);
+        apicallBtn = findViewById(R.id.api_Call);
 
 
         buttonLinear.setOnClickListener(view -> {
@@ -126,6 +127,11 @@ public class MainActivity extends AppCompatActivity {
 
         googleBtn.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
+
+        apicallBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, ApiTestActivity.class);
             startActivity(intent);
         });
 
