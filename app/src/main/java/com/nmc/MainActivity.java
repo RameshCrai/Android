@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonAbsolute, buttonSum, buttonLinear,
             buttonRelative, buttonTable, buttonParse,
             buttonConstraint,buttonFrage, btnOptMenu, btnContMenu,
-    buttonPopup, buttonDialog, buttonLview, buttonGview, buttonCview,
-            buttonRview, btndatabase;
+    buttonPopup, buttonDialog, buttonLview, buttonCview,
+            buttonRview, btndatabase, googleBtn;
     ;
 
     @Override
@@ -34,9 +34,11 @@ public class MainActivity extends AppCompatActivity {
         buttonPopup = findViewById(R.id.buttonPopupMenu);
         buttonDialog = findViewById(R.id.buttonDialogBox);
         buttonLview = findViewById(R.id.buttonListView);
-        buttonGview = findViewById(R.id.buttonGrideView);
+//        buttonGview = findViewById(R.id.buttonGrideView);
         buttonCview = findViewById(R.id.buttonCustome);
         buttonRview = findViewById(R.id.buttonRecyclerView);
+        btndatabase = findViewById(R.id.buttonDatabase);
+        googleBtn = findViewById(R.id.googlemap);
 
 
         buttonLinear.setOnClickListener(view -> {
@@ -122,6 +124,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        googleBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
 
     }
 }
