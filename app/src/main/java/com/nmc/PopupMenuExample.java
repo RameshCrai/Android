@@ -33,24 +33,23 @@ public class PopupMenuExample extends AppCompatActivity {
         MenuInflater inflater = popupMenu.getMenuInflater();
         inflater.inflate(R.menu.popup_menu, popupMenu.getMenu());
         // Handle menu item clicks
-
-           popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                @Override
-                public boolean onMenuItemClick(MenuItem item) {
-                    int id = item.getItemId();
-                    if (id == R.id.action_edit) {
-                        Toast.makeText(PopupMenuExample.this, "Edit clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    } else if (id == R.id.action_delete) {
-                        Toast.makeText(PopupMenuExample.this, "Delete clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    } else if (id == R.id.action_share) {
-                        Toast.makeText(PopupMenuExample.this, "Share clicked", Toast.LENGTH_SHORT).show();
-                        return true;
-                    }
-                    return false;
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                int id = item.getItemId();
+                if (id == R.id.action_edit) {
+                    Toast.makeText(PopupMenuExample.this, "Edit clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (id == R.id.action_delete) {
+                    Toast.makeText(PopupMenuExample.this, "Delete clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (id == R.id.action_share) {
+                    Toast.makeText(PopupMenuExample.this, "Share clicked", Toast.LENGTH_SHORT).show();
+                    return true;
                 }
-            });
+                return false;
+            }
+        });
         // Show the popup menu
         popupMenu.show();
     }
