@@ -15,6 +15,21 @@
             android:theme="@style/Theme.NMC"
             tools:targetApi="31">
         <activity
+                android:name=".FragmentProgram"
+                android:exported="false"/>
+        <activity
+                android:name=".DisplaySi"
+                android:exported="false"/>
+        <activity
+                android:name=".SimpleInterest"
+                android:exported="false"/>
+        <activity
+                android:name=".UserDataDisplay"
+                android:exported="false"/>
+        <activity
+                android:name=".UserData"
+                android:exported="false"/>
+        <activity
                 android:name=".SecondActivity"
                 android:exported="false"/>
         <activity
@@ -41,7 +56,6 @@
         <activity
                 android:name=".LabOne"
                 android:exported="false"/>
-
         <activity
                 android:name=".Lab"
                 android:exported="false"/>

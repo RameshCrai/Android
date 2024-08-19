@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CalculateSum extends AppCompatActivity {
@@ -90,5 +91,6 @@ public class CalculateSum extends AppCompatActivity {
         }
 
         tvResult.setText("Result: " + result);
+        Toast.makeText(this, "Result= "+result, Toast.LENGTH_SHORT).show();
     }
 }
