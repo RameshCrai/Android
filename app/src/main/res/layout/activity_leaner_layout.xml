@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:gravity="center_horizontal"
               tools:context=".LeanerLayout">
 
     <ImageView
@@ -12,7 +12,6 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center"
             android:src="@drawable/datascience" />
 
     <!-- Welcome Text -->
@@ -24,57 +23,63 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:layout_gravity="center"
             android:gravity="center" />
 
-    <!-- First Name -->
-    <TextView
-            android:id="@+id/firstNameText"
+    <!-- User Details Container -->
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/first_name"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
 
-    <!-- Last Name -->
-    <TextView
-            android:id="@+id/lastNameText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/last_name"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
+        <!-- First Name -->
+        <TextView
+                android:id="@+id/firstNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_name"
+                android:textSize="18sp"
+                android:layout_gravity="center" />
 
-    <!-- Stream -->
-    <TextView
-            android:id="@+id/streamText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stream"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
+        <!-- Last Name -->
+        <TextView
+                android:id="@+id/lastNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center" />
 
-    <!-- Phone -->
-    <TextView
-            android:id="@+id/phoneText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/phone"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
+        <!-- Stream -->
+        <TextView
+                android:id="@+id/streamText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stream"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center" />
 
-    <!-- Bio -->
-    <TextView
-            android:id="@+id/bioText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/bio"
-            android:textSize="18sp"
-            android:layout_marginTop="8dp"
-            android:layout_gravity="center" />
+        <!-- Phone -->
+        <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center" />
+
+        <!-- Bio -->
+        <TextView
+                android:id="@+id/bioText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center" />
+    </LinearLayout>
 
 </LinearLayout>

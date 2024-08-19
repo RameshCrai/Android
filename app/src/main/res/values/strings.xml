@@ -49,4 +49,17 @@
         dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="linear_layout">Linear layout</string>
+    <string name="table">Table</string>
+    <string name="constraint">Constraint</string>
+    <string name="relative">Relative</string>
+    <string name="absolute">Absolute</string>
+    <string name="sum">Sum</string>
+    <string-array name="states_array">
+        <item>Koshi</item>
+        <item>Bagmati</item>
+        <item>Tarai</item>
+
+    </string-array>
+
 </resources>

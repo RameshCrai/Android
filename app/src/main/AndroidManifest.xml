@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,37 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.NMC"
             tools:targetApi="31">
+        <activity
+                android:name=".SecondActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".FirstActivity"
+                android:exported="false"/>
+        <activity
+                android:name=".UserInputBox"
+                android:exported="false"/>
+        <activity
+                android:name=".MessageShow"
+                android:exported="false"/>
+        <activity
+                android:name=".ProfileLab2"
+                android:exported="false"/>
+        <activity
+                android:name=".LabFour"
+                android:exported="false"/>
+        <activity
+                android:name=".LabThree"
+                android:exported="false"/>
+        <activity
+                android:name=".LabTwo"
+                android:exported="false"/>
+        <activity
+                android:name=".LabOne"
+                android:exported="false"/>
+
+        <activity
+                android:name=".Lab"
+                android:exported="false"/>
         <activity
                 android:name=".ApiTestActivity"
                 android:exported="false"/>

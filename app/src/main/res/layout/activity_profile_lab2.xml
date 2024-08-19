@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/algorithm"
+            android:contentDescription="Algo"/>
+
+    <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Ramesh rai"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:id="@+id/email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: Ramesh@gmail.com"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 981887323"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+    <TextView
+            android:id="@+id/address_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: Putalisadak"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+</LinearLayout>

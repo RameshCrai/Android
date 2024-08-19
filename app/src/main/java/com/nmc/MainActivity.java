@@ -2,18 +2,15 @@ package com.nmc;
 
 import android.content.Intent;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
 
 public class MainActivity extends AppCompatActivity {
     private Button buttonAbsolute, buttonSum, buttonLinear,
             buttonRelative, buttonTable, buttonParse,
-            buttonConstraint,buttonFrage, btnOptMenu, btnContMenu,
-    buttonPopup, buttonDialog, buttonLview, buttonCview,
-            buttonRview, btndatabase, googleBtn, apicallBtn;
-    ;
+            buttonConstraint, buttonFrage, btnOptMenu, btnContMenu,
+            buttonPopup, buttonDialog, buttonLview, buttonCview,
+            buttonRview, btndatabase, googleBtn, apicallBtn, labBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,19 +31,18 @@ public class MainActivity extends AppCompatActivity {
         buttonPopup = findViewById(R.id.buttonPopupMenu);
         buttonDialog = findViewById(R.id.buttonDialogBox);
         buttonLview = findViewById(R.id.buttonListView);
-//        buttonGview = findViewById(R.id.buttonGrideView);
         buttonCview = findViewById(R.id.buttonCustome);
         buttonRview = findViewById(R.id.buttonRecyclerView);
         btndatabase = findViewById(R.id.buttonDatabase);
         googleBtn = findViewById(R.id.googlemap);
         apicallBtn = findViewById(R.id.api_Call);
+        labBtn = findViewById(R.id.Laboratory);
 
-
+        // Set click listeners with correct activities
         buttonLinear.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, LinearLayout.class);
+            Intent intent = new Intent(MainActivity.this, LeanerLayout.class);
             startActivity(intent);
         });
-
 
         buttonTable.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, TableLayout.class);
@@ -63,8 +59,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
-        // Set click listeners
         buttonAbsolute.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, AbsoluteLayout.class);
             startActivity(intent);
@@ -79,15 +73,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ParseActivityOne.class);
             startActivity(intent);
         });
-        buttonFrage.setOnClickListener(view->{
+
+        buttonFrage.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, FragementDemoActivity.class);
             startActivity(intent);
         });
-        btnOptMenu.setOnClickListener(view->{
+
+        btnOptMenu.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, OptionMenu.class);
             startActivity(intent);
         });
-        btnContMenu.setOnClickListener(view->{
+
+        btnContMenu.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, ContextMenuExample.class);
             startActivity(intent);
         });
@@ -102,18 +99,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
         buttonLview.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, listViewExample.class);
             startActivity(intent);
         });
 
-
         buttonCview.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, CustomListViewExample.class);
             startActivity(intent);
         });
-
 
         buttonRview.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, RecyclerViewExample.class);
@@ -135,5 +129,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        labBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, Lab.class);
+            startActivity(intent);
+        });
     }
 }
