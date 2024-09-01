@@ -115,4 +115,26 @@
             android:textSize="18sp" />
     </TableRow>
 
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+        >
+        <Button
+                android:id="@+id/defaultbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default Dialog Box"
+            android:textSize="15sp"
+            />
+        <Button
+                android:id="@+id/custombtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Dialog Box"
+                android:textSize="15sp"
+        />
+    </TableRow>
+
+
 </TableLayout>

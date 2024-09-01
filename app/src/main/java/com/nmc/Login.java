@@ -30,16 +30,19 @@ public class Login extends AppCompatActivity {
                 String phone = edtLoginPhone.getText().toString();
 
                 if (email.isEmpty() || phone.isEmpty()) {
-                    Toast.makeText(Login.this, "Please Fill Email and Phone ??", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this,
+                            "Please Fill Email and Phone ??", Toast.LENGTH_SHORT).show();
                 } else {
                     Cursor res = db.getUser(email, phone);
                     if (res != null && res.getCount() > 0) {
                         Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Login.this, Dashboard.class);
+                        Intent intent =
+                                new Intent(Login.this, Dashboard.class);
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(Login.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login.this,
+                                "Login Failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             }

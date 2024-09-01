@@ -10,11 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class FirstFragmentLab extends Fragment {
-
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_first_lab, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_first_lab, container,
+                false);
 
         Button buttonGoToFragment2 = view.findViewById(R.id.buttonGoToFragment2);
         buttonGoToFragment2.setOnClickListener(new View.OnClickListener() {

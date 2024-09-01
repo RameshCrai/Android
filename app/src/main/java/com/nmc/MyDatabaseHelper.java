@@ -42,6 +42,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     public Cursor getUser(String email, String phone) {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.rawQuery("SELECT * FROM " + TABLE_NAME + " WHERE EMAIL=? AND PHONE=?", new String[]{email, phone});
+        return db.rawQuery("SELECT * FROM " +
+                TABLE_NAME + " WHERE EMAIL=? AND PHONE=?", new String[]{email, phone});
     }
 }
